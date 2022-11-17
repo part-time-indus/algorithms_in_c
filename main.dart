@@ -1,3 +1,7 @@
 //entry point for all aglorithm functions
 
-void main() {}
+import 'agorithms/quick_find.dart';
+
+void main() {
+  quickFind();
+}

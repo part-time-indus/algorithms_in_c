@@ -1,17 +1,12 @@
 
-import 'user_input.dart';
+import 'global/user_input.dart';
+import 'global/set_up.dart';
 void quickFind() {
-  const arr_sz = 10;
-  List<int> arr = List.filled(arr_sz, 0);
+
   int? p, q;
-
   var userInp = Input();
-
-  //Fill array with the objects
-  for (int i = 0; i < arr_sz; i++) {
-    arr[i] = i;
-  }
-
+  set_up();
+  
   while (true) {
     userInp.fetch();
     p = userInp.p;
@@ -19,10 +14,7 @@ void quickFind() {
     if(p == null || q == null){
       break;
     }
-    if((p < 0 || p >= arr_sz) || (q < 0 || q >= arr_sz)) {
-      print("Input must range from 0 to ${arr_sz-1}");
-      continue;
-    };
+    if(!input_in_range(arr_sz, p, q)) continue;
 
     if (arr[p] == arr[q]) continue;
     for (int i = 0; i < arr_sz; i++) {

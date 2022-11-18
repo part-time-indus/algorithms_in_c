@@ -1,4 +1,5 @@
 const arr_sz = 10;
+List<int> wt = List.filled(arr_sz, 1);
 List<int> arr = List.filled(arr_sz, 0);
 void set_up(){
     for (int i = 0; i < arr_sz; i++) {
@@ -14,3 +15,75 @@ bool input_in_range(int arr_sz, int p, int q){
   return true;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
